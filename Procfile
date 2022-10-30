@@ -1,2 +1,1 @@
-web:
-  make start
+web: make start

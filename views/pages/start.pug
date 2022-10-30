@@ -1,0 +1,10 @@
+extends ../index.pug
+
+block content
+  .container.position-absolute.start-50.bottom-50.translate-middle-x
+    h1 May i have your name?
+    form(action='/start' method='post')
+      .form-floating.w-50.mt-5.top-50.start-50.translate-middle
+        input.form-control.form-control(name= 'name' type='text', id='name' placeholder='Your name')
+        label(for='name') Name
+      button.btn.btn-lg.btn-primary(type='submit') Continue

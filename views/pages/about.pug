@@ -1,0 +1,24 @@
+extends ../index.pug
+
+block content
+  .container
+    h1 About
+    p.lh-lg.lead
+      | This project based on first learning project of 
+      a(href='https://hexlet.io/') Hexlet.io 
+      | - 
+      a(href='https://asciinema.org/a/l40Lrk3midkLmNEOmgZErGnY7') Brain Games!
+    p.lead.mb-1
+      | This is console-based game, which contains five console math-games for brain level-ups!
+      | Every game ask a questions on which you must give correct answers!
+      | After three correct answers game ends, but there, in WEB Brain-games, you can answer on questions for eternal!
+    p.lead.mb-1 Games:
+    ul
+      li Calculator. Arithmetic expressions, which you must calculate.
+      li Progression. Search lost number in arithmetic progression.
+      li Definition of even number.
+      li Definition of prime number.
+      li Definition of GCD.
+    img(src='/brain-demo.gif')
+    p.lh-lg.justify-content-center.float-md-center
+      a.btn.mt-3.btn-lg.btn-primary(href='/') I get it!

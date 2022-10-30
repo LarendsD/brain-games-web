@@ -1,0 +1,11 @@
+extends ../../index.pug
+
+block header
+  h1 Answer "Yes" if the number is even, otherwise answer "No"
+block content
+  .container.position-absolute.start-50.bottom-50.translate-middle-x
+    h1= question
+    p.lh-lg.justify-content-center.float-md-center
+      form(action='/games/check' method='post')
+        button.btn.btn-lg.btn-primary.me-3(type="submit" name='answer' value="Yes") Yes
+        button.btn.btn-lg.btn-primary.ms-3(type="submit" name='answer' value="No") No

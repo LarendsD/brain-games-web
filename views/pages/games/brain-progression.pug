@@ -1,0 +1,13 @@
+extends ../../index.pug
+
+block header
+  h1 What number is missing in the progression?
+block content
+  .container.position-absolute.start-50.bottom-50.translate-middle-x
+    h1= question
+    p.lh-lg.justify-content-center.float-md-center
+      form(action='/games/check' method='post')
+        .form-floating.w-50.mt-5.top-50.start-50.translate-middle
+          input.form-control.form-control(name= 'answer' type='text', id='answer' placeholder='Your answer')
+          label(for='answer') Answer
+        button.btn.btn-lg.btn-primary.me-3(type="submit") Submit

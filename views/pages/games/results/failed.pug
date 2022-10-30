@@ -1,0 +1,9 @@
+extends ../../../index.pug
+
+block content
+  .container.position-absolute.start-50.bottom-50.translate-middle-x
+    h1= `'${answer}' is wrong answer ;(. Correct answer was '${correctAnswer}'`
+    h3= `Let's try again, ${name}!`
+    p.lh-lg.justify-content-center.float-md-center
+        a.btn.btn-lg.btn-primary.me-3(href=ref) Try again!
+        a.btn.btn-lg.btn-primary.ms-3(href='/games') Select another game!

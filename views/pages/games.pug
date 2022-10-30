@@ -1,0 +1,43 @@
+extends ../index.pug
+
+block content
+  .container
+    h1.mb-3= `Hello ${name}, please, select a game!`
+    .row
+      .col
+        .card
+          img.card-img-top(src='/brain-even.gif' alt='Brain Even demo' style="width:425px")
+          .card-body
+            h5.card-title Brain Even
+            p.card-text I give you a number and you must answer even this number or not.
+            a.btn.btn-primary.streched-link(href='games/brain-even') Select
+      .col
+        .card
+          img.card-img-top(src='/brain-calc.gif' alt='Brain Calculator demo')
+          .card-body
+            h5.card-title Brain Calculator
+            p.card-text I give you an expression with two numbers and you write a solution.
+            a.btn.btn-primary.streched-link(href='games/brain-calc') Select
+      .col
+        .card
+          img.card-img-top(src='/brain-gcd.gif' alt='Brain GCD demo')
+          .card-body
+            h5.card-title Brain GCD
+            p.card-text I give you a numbers and you must find the greatest common divisior of given numbers.
+            a.btn.btn-primary.streched-link(href='games/brain-gcd') Select
+    .row
+      .col
+        .card
+          img.card-img-top(src='/brain-progression.gif' alt='Brain Progression demo')
+          .card-body
+            h5.card-title Brain Progression
+            p.card-text I give you progression and you must get missing number in this progression.
+            a.btn.btn-primary.streched-link(href='games/brain-progression') Select
+      .col
+        .card
+          img.card-img-top(src='/brain-prime.gif' alt='Brain Prime demo' style="height:365px")
+          .card-body
+            h5.card-title Brain Prime
+            p.card-text I give you a number and you must answer prime this number or not.
+            a.btn.btn-primary.streched-link(href='games/brain-prime') Select
+        
